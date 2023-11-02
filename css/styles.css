@@ -1,3 +1,8 @@
+body {
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
 /* Customise the color of Hamburger Menu */
 .custom-toggler.navbar-toggler {
     border-color: #f7941d;
@@ -11,12 +16,68 @@
 /* Customise Heading and Nav Colors */
 .mainHeading {
     color: #f7941d;
+    font-weight: bold;
 }
 
+.navbar {
+    border-bottom: none !important;
+    background-color: black !important;
+}
 .navbar-nav a {
     color: #448ecc;
     font-weight: bold;
     border-bottom: 2px solid #448ecc;
     padding: 0;
     border-radius: 0 0 10px 0;
+    text-align: right;
+}
+
+.navbar-nav a:hover {
+    color: #f7941d;
+    border-bottom: 2px solid #f7941d;
+}
+
+/* Customise Jumbotron */
+.heroImage {
+    background-image: url(../images/keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 0 !important;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heroText img {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #f7941d;
+}
+
+.heroText h2 {
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+
+.jumboText button {
+    /* position: relative; */
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .heroText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
 }
