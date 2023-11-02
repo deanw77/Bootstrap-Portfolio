@@ -5,63 +5,114 @@
 -->
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="author" content="Dean Waring" />
-        <meta name="description" content="Dean Waring, portfolio of projects." />
-        <meta name="keywords" content="HTML, CSS, JavaScript, Blender, Software, Development" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Dean Waring" />
+    <meta name="description" content="Dean Waring, portfolio of projects." />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Blender, Software, Development" />
 
-        <title>Dean Waring | Portfolio</title>
+    <title>Dean Waring | Portfolio</title>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <!-- Bootstrap Navigation -->
-            <nav class="navbar navbar-expand-md bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
-                <div class="container">
-                    <div class="logoContainer d-flex align-items-center">
-                        <img src="images/Logo.png" alt="Light Imaginations Logo" width="70px">
-                        <h1 class="mainHeading">Dean Waring</h1>
+    <header>
+        <!-- Bootstrap Navigation -->
+        <nav class="navbar navbar-expand-md bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+            <div class="container">
+                <div class="logoContainer d-flex align-items-center">
+                    <img src="images/Logo.png" alt="Light Imaginations Logo" width="70px">
+                    <h1 class="mainHeading">Dean Waring</h1>
+                </div>
+
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto ">
+                        <a class="nav-link mx-2 px-2" href="#aboutMe">About Me</a>
+                        <a class="nav-link mx-2 px-2" href="#work">Work</a>
+                        <a class="nav-link mx-2 px-2" href="#contactMe">Contact Me</a>
+                        <a class="nav-link mx-2 px-2"
+                            href="https://www.linkedin.com/in/dean-waring-560593294/" target="_blank">LinkedIn</a>
                     </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <!-- Jumbotron Hero Image -->
+    <section class="heroImage pt-5 bg-body-tertiary rounded-3">
+        <div class="container py-5 jumboCopy">
+            <div class="heroText">
+                <img src="images/Race.jpg" alt="Profile Picture">
+                <h2 class="display-5 fw-bold">Web Development & Graphic Design</h2>
+                <button id="contactMeBtn" class="btn btn-primary btn-md" type="button">Contact Me</button>
+            </div>
+        </div>
+    </section>
 
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto ">
-                            <a class="nav-link mx-2 px-2" href="#aboutMe">About Me</a>
-                            <a class="nav-link mx-2 px-2" href="#work">Work</a>
-                            <a class="nav-link mx-2 px-2" href="#contactMe">Contact Me</a>
-                            <a class="nav-link mx-2 px-2" href="https://www.linkedin.com/in/dean-waring-560593294/">LinkedIn</a>
+    <!-- Main Sections -->
+    <main>
+        <!-- About Me -->
+        <section class="aboutMe" id="aboutMe">
+            <div class="container">
+                <div class="card sm-12 mx-auto">
+                    <div class="row g-0">
+                        <div class="col-sm-2 cardTitle">
+                            <h5 class="card-title">About Me</h5>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="card-body cardText">
+                                <p class="card-text">Prior to moving to Web Development, I designed logo's and t-shirt designs for athletics clubs around the country. Managing the E-Commerce store and Social Media accounts as well. I've always had a love for the web and coding in general. It is this that pushed me to focus entirely on what I enjoy. Designing and Coding</p>
+                                <p class="card-text">I do have a particular love for sports, as such most of the work I've done so far is focused on Running Clubs and Software development for the Garmin Fitness Platform. This is, however, something I am looking to expand on and am excited to take on a wide variety of new projects.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-
-        <!-- Jumbotron Hero Image -->
-        <section class="heroImage p-5 mb-4 bg-body-tertiary rounded-3">
-            <div class="container py-5 jumboCopy">
-                <div class="heroText">
-                    <img src="images/Race.jpg" alt="Profile Picture">
-                    <h2 class="display-5 fw-bold">Web Development & Graphic Design</h2>
-                    <button class="btn btn-primary btn-md" type="button">Contact Me</button>
-                </div>               
             </div>
         </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-    </body>
+        <!-- Contact Me -->
+        <section class="contactMe" id="contactMe">
+            <div class="container">
+                <div class="card sm-12 mx-auto">
+                    <div class="row g-0">
+                        <div class="col-sm-2 cardTitle">
+                            <h5 class="card-title">Contact Me</h5>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="card-body cardText">
+                                <p class="card-text">Prior to moving to Web Development, I designed logo's and t-shirt designs for athletics clubs around the country. Managing the E-Commerce store and Social Media accounts as well. I've always had a love for the web and coding in general. It is this that pushed me to focus entirely on what I enjoy. Designing and Coding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h6>&copy; Dean Waring 2023</h6>
+        <a href="https://www.linkedin.com/in/dean-waring-560593294/" target="blank">
+            <img src="images/LinkedinLogo.png" alt="LinkedIn Logo, Link to my profile">
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

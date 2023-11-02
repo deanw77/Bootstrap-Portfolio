@@ -64,12 +64,68 @@ body {
     font-size: 1.3rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.jumboText button {
-    /* position: relative; */
-    margin-right: auto;
+#contactMeBtn {
+    background-color: #f7941d;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#contactMeBtn:hover {
+    background-color: #448ecc;
+}
+
+
+/* About Me & Contact Me Styling*/
+.card {
+    border: none;
+    margin-top: 10px;
+}
+
+.cardTitle {
+    border-bottom: 3px solid #f7941d;
+    border-radius: 0 0 10px 0;
+}
+
+.cardTitle h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 20px 0 0;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    min-height: 40px;
+    color: #F7941D;
+}
+
+footer h6 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer img {
+    height: 30px;
+}
+
+@media only screen and (min-width: 576px) {
+    .cardTitle {
+        border-right: 3px solid #f7941d;
+        border-bottom: none;
+        border-radius: 0 10px 0 0;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -79,5 +135,9 @@ body {
         align-items: center;
         justify-content: space-between;
         text-align: center;
+    }
+
+    .cardTitle h5 {
+        text-align: right;
     }
 }
