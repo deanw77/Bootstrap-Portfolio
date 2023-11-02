@@ -22,6 +22,7 @@ body {
 .navbar {
     border-bottom: none !important;
     background-color: black !important;
+    opacity: 0.9;
 }
 .navbar-nav a {
     color: #448ecc;
@@ -34,7 +35,10 @@ body {
 
 .navbar-nav a:hover {
     color: #f7941d;
-    border-bottom: 2px solid #f7941d;
+}
+
+.navbar-nav a:focus {
+    color: #f7941d;
 }
 
 /* Customise Jumbotron */
@@ -120,15 +124,13 @@ footer img {
     height: 30px;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
     .cardTitle {
         border-right: 3px solid #f7941d;
         border-bottom: none;
         border-radius: 0 10px 0 0;
     }
-}
 
-@media only screen and (min-width: 768px) {
     .heroText {
         display: flex;
         flex-direction: row;
