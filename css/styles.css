@@ -124,6 +124,21 @@ footer img {
     height: 30px;
 }
 
+.workCards {
+    min-height: 200px;
+    padding: 25px;
+}
+
+.workCard {
+    min-height: 100px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.singleCard {
+    border: 2px solid black;
+}
+
 @media only screen and (min-width: 768px) {
     .cardTitle {
         border-right: 3px solid #f7941d;
