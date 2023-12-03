@@ -85,6 +85,10 @@ body {
 
 
 /* About Me & Contact Me Styling*/
+#aboutMe, #myWork {
+    scroll-margin-top: 100px;
+}
+
 .card {
     border: none;
     margin-top: 10px;
@@ -141,10 +145,6 @@ footer img:hover {
     min-height: 100px;
     margin-bottom: 10px;
     justify-content: space-between;
-}
-
-.singleCard {
-    border: 2px solid black;
 }
 
 @media only screen and (min-width: 768px) {
